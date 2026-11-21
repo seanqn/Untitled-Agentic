@@ -22,3 +22,13 @@ The ultimate goal of the app or tool is to seamlessly build an agentic workflow 
    For developers integrating agentic workflow using proprietary models, a promptless method is even more desirable. The application could support monitoring capabilities and relay to the model API or simply support script generation from within the app itself, acting more like a composer.
    In an external environment, it works as a tool and tracks any changes, updating context of the environment until the workflow needs to be initiated or progressed, which would then start a process. For in-app script generations, initiation would follow from a 'preset' or allow for an initial text-based prompt
    so a custom script can be generated. There is no reason to necessarily remove textual context as a feature, rather leave it as fallback.
+
+## Concepts
+Outside of this general approach to agentic workflow, the question of what the environment is should be answered.
+
+System-wide:
+Slightly different but may conceptually integrate some of the features and capabilities listed. A system-wide agentic workflow orchestrator
+would inherently be agnostic and allow custom usage of models, as well as local models. Several proprietary model applications do achieve this, but there are few agnostic applications.
+Additionally, this may not initially be as broad as a complete orchestration app, instead focusing in on specific needs across the operating system. One such approach would interpret diagnostics (logs, resource usage, etc.) to determine specific user requests
+or track and maintain overall health of the system. The latter would not require agentic capabilities, but the former could support agentic contextualization to provide technical support to the user, such as a step-by-step custom trouleshooting guide. This ties back into removing the need for remprompting, but
+is resolved by eliminating the expected need for context (i.e. what version of the app are you running, which program is consuming significant resources, where are the files stored, etc.).
